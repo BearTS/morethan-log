@@ -43,7 +43,7 @@ const LeftGroup = styled.div`
 
 const SubscribeButton = styled.button`
   background: ${({ theme }) => theme.colors.gray1};
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors};
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 6px;
