@@ -9,6 +9,7 @@ const CONFIG = {
     linkedin: "anujpflash",
     github: "bearts",
     twitter: "anujpflash",
+    mastodon: "anujparihar",
     instagram: "",
   },
   projects: [
@@ -37,7 +38,7 @@ const CONFIG = {
 
   // plugin configuration (optional)
   googleAnalytics: {
-    enable: false,
+    enable: true,
     config: {
       measurementId: process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID || "",
     },

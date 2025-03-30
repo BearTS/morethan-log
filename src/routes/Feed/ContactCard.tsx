@@ -7,6 +7,7 @@ import {
   AiOutlineMail,
   AiOutlineTwitter,
 } from "react-icons/ai"
+import { FaMastodon } from "react-icons/fa";
 import { CONFIG } from "site.config"
 import { Emoji } from "src/components/Emoji"
 
@@ -35,6 +36,16 @@ const ContactCard: React.FC = () => {
           >
             <AiOutlineTwitter className="icon" />
             <div className="name">Twitter</div>
+          </a>
+        )}
+         {CONFIG.profile.mastodon && (
+          <a
+            href={`https://mastodon.social/@${CONFIG.profile.mastodon}`}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <FaMastodon className="icon" />
+            <div className="name">Mastodon</div>
           </a>
         )}
         {CONFIG.profile.instagram && (
