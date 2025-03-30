@@ -1,7 +1,7 @@
 import Detail from "src/routes/Detail"
 import { filterPosts } from "src/libs/utils/notion"
 import { CONFIG } from "site.config"
-import { NextPageWithLayout } from "../types"
+import { NextPageWithLayout } from "../../types"
 import CustomError from "src/routes/Error"
 import { getRecordMap, getPosts } from "src/apis"
 import MetaConfig from "src/components/MetaConfig"
@@ -22,7 +22,7 @@ export const getStaticPaths = async () => {
   const filteredPost = filterPosts(posts, filter)
 
   return {
-    paths: filteredPost.map((row) => `/${row.slug}`),
+    paths: filteredPost.map((row) => `/writing/${row.slug}`), // Modified here
     fallback: true,
   }
 }
@@ -69,8 +69,8 @@ const DetailPage: NextPageWithLayout = () => {
     image: image,
     description: post.summary || "",
     type: post.type[0],
-    url: `${CONFIG.link}/${post.slug}`,
-  }
+    url: `${CONFIG.link}/writing/${post.slug}`, // Modified here  
+    }
 
   return (
     <>

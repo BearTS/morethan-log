@@ -49,7 +49,8 @@ const Feed: React.FC<Props> = () => {
         }}
       >
         <ProfileCard />
-        <ServiceCard />
+        {/* !TODO: do this */}
+        {/* <ServiceCard /> */}
         <ContactCard />
         <div className="footer">
           <Footer />

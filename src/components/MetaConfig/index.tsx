@@ -28,6 +28,7 @@ const MetaConfig: React.FC<MetaConfigProps> = (props) => {
       <meta name="twitter:title" content={props.title} />
       <meta name="twitter:description" content={props.description} />
       <meta name="twitter:card" content="summary_large_image" />
+      <script async src="https://eocampaign1.com/form/45ec5aac-0d54-11f0-81da-9d1fd4347bde.js" data-form="45ec5aac-0d54-11f0-81da-9d1fd4347bde"></script>
       {props.image && <meta name="twitter:image" content={props.image} />}
       {/* post */}
       {props.type === "Post" && (
